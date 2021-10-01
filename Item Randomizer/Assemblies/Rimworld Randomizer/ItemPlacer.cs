@@ -32,10 +32,10 @@ namespace Rimworld_Randomizer
                 {
                     return true;
                 }
-                if (RandomList.recursing)
+                /*if (RandomList.recursing)
                 {
                     return true;
-                }
+                }*/
             }
             if (!Controller.settings.randomizeStartingItems && GenTicks.TicksGame < 600)
             {
@@ -71,18 +71,46 @@ namespace Rimworld_Randomizer
                     if (Controller.settings.resourcesBasedOnMV)
                     {
                         float baseValue = newThing.GetStatValue(StatDefOf.MarketValue) * (float)count;
-                        Log.Message("market value = " + tempThing.def.GetStatValueAbstract(StatDefOf.MarketValue));
                         count = (int)(baseValue / tempThing.def.GetStatValueAbstract(StatDefOf.MarketValue));
                     }
-
+                    if (count < 1)
+                    {
+                        count = 1;
+                    }
                     if (count > tempThing.def.stackLimit)
                     {
-                        Dictionary<ThingDef,ThingDef> reverseSearch = ListScrambler.reverseDict(RandomList.resources);
-                        Thing thing2 = RandomList.makeThingSubstitute(reverseSearch[newThing.def]);
-                        thing2.stackCount = tempThing.def.stackLimit;
-                        //GenSpawn.Spawn(thing2, loc, map, rot);
-                        newThing = tempThing;
-                        newThing.stackCount = tempThing.def.stackLimit;
+                        //Dictionary<ThingDef,ThingDef> reverseSearch = ListScrambler.reverseDict(RandomList.resources);
+                        //Thing thing2 = RandomList.makeThingSubstitute(reverseSearch[newThing.def]);
+                        //thing2.stackCount = tempThing.def.stackLimit;
+                        //GenSpawn.Spawn(thing2, loc, map, rot,wipeMode,respawningAfterLoad);
+                        int times = count / tempThing.def.stackLimit;
+                        int leftover = count % tempThing.def.stackLimit;
+                        for (int i = 0; i < times; i++)
+                        {
+                            Thing thing3 = RandomList.makeThingSubstitute(RandomList.resources[newThing.def]);
+                            thing3.Rotation = rot;
+                            thing3.Position = loc;
+                            thing3.stackCount = tempThing.def.stackLimit;
+                            if (tempThing.holdingOwner != null)
+                            {
+                                tempThing.holdingOwner.Remove(newThing);
+                            }
+                            thing3.SpawnSetup(map, respawningAfterLoad);
+                        }
+                        Thing thin4 = tempThing;
+                        thin4.Rotation = rot;
+                        thin4.Position = loc;
+                        thin4.stackCount = leftover;
+                        if (tempThing.holdingOwner != null)
+                        {
+                            tempThing.holdingOwner.Remove(newThing);
+                        }
+                        thin4.SpawnSetup(map, respawningAfterLoad);
+
+                        //newThing = thing3;
+                        //newThing.stackCount = thing3.def.stackLimit;
+                        return false;
+                        
                     }
                     else
                     {
@@ -107,29 +135,36 @@ namespace Rimworld_Randomizer
                     }
                     if (newCount > tempThing.def.stackLimit)
                     {
-                        Dictionary<ThingDef, ThingDef> reverseSearch = ListScrambler.reverseDict(RandomList.food);
+                        /*Dictionary<ThingDef, ThingDef> reverseSearch = ListScrambler.reverseDict(RandomList.food);
                         Thing thing1 = RandomList.makeThingSubstitute(reverseSearch[newThing.def]);
                         thing1.stackCount = tempThing.def.stackLimit;
                         GenSpawn.Spawn(thing1, loc, map, rot);
                         newThing = tempThing;
-                        newThing.stackCount = tempThing.def.stackLimit;
-                        /*int leftover;
-                        double times = (double)Math.Floor((decimal)(newCount / tempThing.def.stackLimit));
-                        leftover = newCount % tempThing.def.stackLimit;
-                        tempThing.stackCount = tempThing.def.stackLimit;
-                        RandomList.recursing = true;
+                        newThing.stackCount = tempThing.def.stackLimit;*/
+                        int times = newCount / tempThing.def.stackLimit;
+                        int leftover = newCount % tempThing.def.stackLimit;
                         for (int i = 0; i < times; i++)
                         {
-                            Thing thing2 = RandomList.makeThingSubstitute(RandomList.food[newThing.def]);
-                            Log.Message("Thing2.def = " + thing2.def.defName);
-                            thing2.stackCount = tempThing.def.stackLimit;
-                            GenSpawn.Spawn(thing2, loc, map, rot, wipeMode, respawningAfterLoad);
-                             i++;
+                            Thing thing3 = RandomList.makeThingSubstitute(RandomList.food[newThing.def]);
+                            thing3.Rotation = rot;
+                            thing3.Position = loc;
+                            thing3.stackCount = tempThing.def.stackLimit;
+                            if (tempThing.holdingOwner != null)
+                            {
+                                tempThing.holdingOwner.Remove(newThing);
+                            }
+                            thing3.SpawnSetup(map, respawningAfterLoad);
                         }
-                        RandomList.recursing = false;
-                        newThing = tempThing;
-                        newThing.stackCount = leftover;
-                        */
+                        Thing thing4 = tempThing;
+                        thing4.Rotation = rot;
+                        thing4.Position = loc;
+                        thing4.stackCount = leftover;
+                        if (tempThing.holdingOwner != null)
+                        {
+                            tempThing.holdingOwner.Remove(newThing);
+                        }
+                        thing4.SpawnSetup(map, respawningAfterLoad);
+                        return false;
                     }
                     else
                     {
