@@ -23,9 +23,9 @@ namespace Rimworld_Randomizer
             foreach (StackFrame sf in stackList)
             {
                 //Log.Message(sf.GetMethod().Name);
-                if (sf.GetMethod().Name == "TryDrop" || sf.GetMethod().Name == "<FinishRecipeAndStartStoringProduct>b__0") { 
+                if (sf.GetMethod().Name == "TryDrop" || sf.GetMethod().Name == "<FinishRecipeAndStartStoringProduct>b__0") {
                     return true;
-                }else if((GenTicks.TicksAbs - LoadSavePatch.x < 5 && GenTicks.TicksGame > 5) || (LoadSavePatch.x == -1 && GenTicks.TicksGame > 600))
+                } else if (sf.GetMethod().Name == "LoadGame" /*|| GenTicks.TicksAbs - LoadSavePatch.x < 5 && GenTicks.TicksGame > 5 || LoadSavePatch.x == -1 && GenTicks.TicksGame > 600*/)
                 {
                     return true;
                 }else if(!Controller.settings.randomizeTraderDrops && sf.GetMethod().Name == "GiveSoldThingToPlayer")
@@ -105,8 +105,10 @@ namespace Rimworld_Randomizer
                         {
                             tempThing.holdingOwner.Remove(newThing);
                         }
-                        thin4.SpawnSetup(map, respawningAfterLoad);
-
+                        if (thin4.stackCount > 0)
+                        {
+                            thin4.SpawnSetup(map, respawningAfterLoad);
+                        }
                         //newThing = thing3;
                         //newThing.stackCount = thing3.def.stackLimit;
                         return false;

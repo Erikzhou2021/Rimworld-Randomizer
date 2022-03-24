@@ -34,9 +34,9 @@ namespace Rimworld_Randomizer
                 Scribe_Collections.Look(ref RandomList.food, "food", LookMode.Def, LookMode.Def);
                 Scribe_Collections.Look(ref RandomList.items, "items", LookMode.Def, LookMode.Def);
                 Scribe.mode = LoadSaveMode.LoadingVars;
-                
+
             }
-            
+
         }
     }
     [HarmonyPatch(typeof(GenRecipe), "MakeRecipeProducts")]
@@ -45,7 +45,7 @@ namespace Rimworld_Randomizer
         [HarmonyPostfix]
         public static IEnumerable<Thing> MakeRecipeProducts(IEnumerable<Thing> __result)
         {
-                if (Controller.settings.randomizeRecipes)
+            if (Controller.settings.randomizeRecipes)
             {
                 List<Thing> newList = new List<Thing>();
                 foreach (Thing thing in __result)
@@ -99,7 +99,7 @@ namespace Rimworld_Randomizer
         [HarmonyPrefix]
         public static bool SpawnDropPod(IntVec3 dropSpot, Map map, Thing t)
         {
-            
+
             if (!Controller.settings.randomizeTraderDrops)
             {
                 ThingDef tempDef;
@@ -131,21 +131,9 @@ namespace Rimworld_Randomizer
                 activeDropPodInfo.SingleContainedThing = t;
                 activeDropPodInfo.leaveSlag = false;
                 DropPodUtility.MakeDropPodAt(dropSpot, map, activeDropPodInfo);
-                
+
             }
             return false;
-        }
-    }
-    [HarmonyPatch(typeof(SavedGameLoaderNow), "LoadGameFromSaveFileNow")]
-    internal static class LoadSavePatch
-    {
-        public static int x = -1;
-        [HarmonyPostfix]
-        [HarmonyPriority(420)]
-        public static void Postfix()
-        {
-            x = GenTicks.TicksAbs;
-            //Log.Message("x = " + x.ToString());
         }
     }
 }
