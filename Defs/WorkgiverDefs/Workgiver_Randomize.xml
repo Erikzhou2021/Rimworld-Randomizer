@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkGiverDef>
+    <defName>DoBillsRandomizer</defName>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>10</priorityInType>
+    <fixedBillGiverDefs>
+		<li>BuildingRandomizer</li>
+	</fixedBillGiverDefs>
+    <verb>randomize</verb>
+    <gerund>randomizing</gerund>
+  </WorkGiverDef>
+</Defs>

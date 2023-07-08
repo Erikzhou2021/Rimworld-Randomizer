@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>RandomizeItem</defName>
+		<label>Randomize Item</label>
+		<description>Reroll your items.</description>
+		<jobString>Randomizing Item.</jobString>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<recipeUsers>
+			<li>BuildingRandomizer</li>			
+		</recipeUsers>
+		<workAmount>200</workAmount>
+		<products>
+			<Silver>5</Silver>
+		</products>
+		
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>ResourcesRaw</li>
+				<li>Manufactured</li>
+			  </categories>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <categories>
+			<li>ResourcesRaw</li>
+			<li>Manufactured</li>
+		  </categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>
