@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>RandomItemPlaceholder</defName>
+		<label>randomized item</label>
+		<description>A random item will be generated from this</description>
+		<statBases>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+		  <texPath>questionMark</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+  </ThingDef>
+</Defs>

@@ -23,3 +23,10 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Item Randomizer\Asse
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Item Randomizer\Assemblies\Rimworld Randomizer.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Item Randomizer\Assemblies\Rimworld Randomizer.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Item Randomizer\Assemblies\Rimworld Randomizer\obj\Debug\Rimworld Randomizer.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsCopy\Item Randomizer\Assemblies\Rimworld Randomizer\obj\Debug\Rimworld Randomizer.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsCopy\Item Randomizer\Assemblies\Rimworld Randomizer\obj\Debug\Rimworld Randomizer.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsCopy\Item Randomizer\Assemblies\Rimworld Randomizer\obj\Debug\Rimworld Randomizer.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsCopy\Item Randomizer\Assemblies\Rimworld Randomizer\obj\Debug\Rimworld Randomizer.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsCopy\Item Randomizer\Assemblies\Rimworld Randomizer\obj\Debug\Rimworld Randomizer.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsCopy\Item Randomizer\Assemblies\Rimworld Randomizer.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsCopy\Item Randomizer\Assemblies\Rimworld Randomizer.pdb

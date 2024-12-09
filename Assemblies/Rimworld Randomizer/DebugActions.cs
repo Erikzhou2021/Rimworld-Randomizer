@@ -7,12 +7,13 @@ using RimWorld;
 using Unity;
 using UnityEngine;
 using Verse;
+using LudeonTK;
 
 namespace Rimworld_Randomizer
 {
     internal class DebugActions
     {
-        [DebugAction("Item Randomizer", "Spawn Without Random", false, false, false, 0, false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        [DebugAction("Item Randomizer", "Spawn Without Random", false, false, false, false, 0, false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         private static List<DebugActionNode> SpawnWithoutRandom()
         {
             //return DebugThingPlaceHelper.TryPlaceOptionsForStackCount(1, false).OrderBy<DebugActionNode, string>((Func<DebugActionNode, string>)(x => x.label)).ToList<DebugActionNode>();
@@ -43,7 +44,7 @@ namespace Rimworld_Randomizer
             return debugActionNodeList;
         }
 
-        [DebugAction("Item Randomizer", "Spawn Reversed Random", false, false, false, 0, false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        [DebugAction("Item Randomizer", "Spawn Reversed Random", false, false, false, false, 0, false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         private static List<DebugActionNode> SpawnReversedRandom()
         {
             //return DebugThingPlaceHelper.TryPlaceOptionsForStackCount(1, false).OrderBy<DebugActionNode, string>((Func<DebugActionNode, string>)(x => x.label)).ToList<DebugActionNode>();

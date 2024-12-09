@@ -17,7 +17,7 @@ namespace Rimworld_Randomizer
         }
         public static Dictionary<ThingDef, ThingDef> randItems()
         {
-            IEnumerable<ThingDef> items = DefDatabase<ThingDef>.AllDefs.Where<ThingDef>((Func<ThingDef, bool>)(def => def.IsWithinCategory(ThingCategoryDefOf.Items) && !def.isUnfinishedThing || def.IsWithinCategory(ThingCategoryDefOf.Artifacts)));
+            IEnumerable<ThingDef> items = DefDatabase<ThingDef>.AllDefs.Where<ThingDef>((Func<ThingDef, bool>)(def => def.IsWithinCategory(ThingCategoryDefOf.Items) && !def.isUnfinishedThing || def.IsWithinCategory(ThingCategoryDefOf.Neurotrainers)));
             return scramble(items);
         }
         public static Dictionary<ThingDef, ThingDef> randGear()

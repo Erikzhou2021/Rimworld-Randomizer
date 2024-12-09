@@ -11,7 +11,7 @@ using System.Diagnostics;
 using System.Xml;
 namespace Rimworld_Randomizer
 {
-    [HarmonyPatch (typeof(GenSpawn), "Spawn", new[] {typeof(Thing), typeof(IntVec3), typeof(Map), typeof(Rot4), typeof(WipeMode), typeof(bool)})]
+    [HarmonyPatch (typeof(GenSpawn), "Spawn", new[] {typeof(Thing), typeof(IntVec3), typeof(Map), typeof(Rot4), typeof(WipeMode), typeof(bool), typeof(bool)})]
     class ItemPlacer
     {
         [HarmonyPrefix]
@@ -26,7 +26,8 @@ namespace Rimworld_Randomizer
             if (!Controller.settings.randomizeStartingItems && GenTicks.TicksGame < 600)
             {
                 return true;
-            }else if ((GenTicks.TicksAbs - SavePatch.lastSaveLoadTick < 5 && GenTicks.TicksGame > 5))
+            }
+            else if ((GenTicks.TicksAbs - SavePatch.lastSaveLoadTick < 5 && GenTicks.TicksGame > 5))
             {
                 return true;
             }
@@ -143,6 +144,10 @@ namespace Rimworld_Randomizer
             if (tempDef == null)
             {
                 return null;
+            }
+            if (tempThing != null && tempThing.GetType() == typeof(Verse.Book))
+            {
+                tempThing = BookUtility.MakeBook(ArtGenerationContext.Outsider);
             }
             stackCount = Math.Max(stackCount, 1);
             tempThing.stackCount = stackCount;

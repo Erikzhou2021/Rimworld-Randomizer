@@ -3,15 +3,15 @@
 	<RecipeDef>
 		<defName>RandomizeItem</defName>
 		<label>Randomize Item</label>
-		<description>Reroll your items.</description>
+		<description>Randomizes the input item based on the standard randomization format. For example, if chopping down a tree yields plasteel, then this recipe will give plasteel if made with wood.\nA 20% loss in market value will be deducted from the output</description>
 		<jobString>Randomizing Item.</jobString>
 		<allowMixingIngredients>false</allowMixingIngredients>
 		<recipeUsers>
 			<li>BuildingRandomizer</li>			
 		</recipeUsers>
-		<workAmount>200</workAmount>
+		<workAmount>300</workAmount>
 		<products>
-			<Silver>5</Silver>
+			<RandomItemPlaceholder>1</RandomItemPlaceholder>
 		</products>
 		
 		<ingredients>
@@ -23,6 +23,70 @@
 			  </categories>
 			</filter>
 			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <categories>
+			<li>ResourcesRaw</li>
+			<li>Manufactured</li>
+		  </categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>ReverseRandomizeItem</defName>
+		<label>Reverse Randomize Item</label>
+		<description>Randomizes the input in the opposite direction from normal. For example, if chopping down a tree yields plasteel, then this recipe will give wood if made with plasteel.\nA 20% loss in market value will be deducted from the output</description>
+		<jobString>Randomizing Item.</jobString>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<recipeUsers>
+			<li>BuildingRandomizer</li>			
+		</recipeUsers>
+		<workAmount>500</workAmount>
+		<products>
+			<RandomItemPlaceholder>1</RandomItemPlaceholder>
+		</products>
+		
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>ResourcesRaw</li>
+				<li>Manufactured</li>
+			  </categories>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <categories>
+			<li>ResourcesRaw</li>
+			<li>Manufactured</li>
+		  </categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>RandomItemFusion</defName>
+		<label>Random Item Fusion</label>
+		<description>Generates completely new items based on the market value of the inputs. Repeating this recipe with the same input items can give different randomized items.\nA 20% loss in market value will be deducted from the output</description>
+		<jobString>Randomizing Item.</jobString>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>BuildingRandomizer</li>			
+		</recipeUsers>
+		<workAmount>2000</workAmount>
+		<products>
+			<RandomItemPlaceholder>1</RandomItemPlaceholder>
+		</products>
+		
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>ResourcesRaw</li>
+				<li>Manufactured</li>
+			  </categories>
+			</filter>
+			<count>100</count>
 		  </li>
 		</ingredients>
 		<fixedIngredientFilter>
