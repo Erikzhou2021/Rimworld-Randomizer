@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\tradepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|solutionrelative:tradepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\randomlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|solutionrelative:randomlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|solutionrelative:settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\debugactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|solutionrelative:debugactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|solutionrelative:controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\recipepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|solutionrelative:recipepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\listscrambler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|solutionrelative:listscrambler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\itemplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28D753BE-AD80-4EDA-A4E7-666BE0A35AC2}|Rimworld Randomizer.csproj|solutionrelative:itemplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TradePatch.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\TradePatch.cs",
+              "RelativeDocumentMoniker": "TradePatch.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\TradePatch.cs",
+              "RelativeToolTip": "TradePatch.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T12:10:09.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\Controller.cs",
+              "RelativeDocumentMoniker": "Controller.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\Controller.cs",
+              "RelativeToolTip": "Controller.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCgAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T13:53:51.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DebugActions.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\DebugActions.cs",
+              "RelativeDocumentMoniker": "DebugActions.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\DebugActions.cs",
+              "RelativeToolTip": "DebugActions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:28:29.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\Settings.cs",
+              "RelativeDocumentMoniker": "Settings.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\Settings.cs",
+              "RelativeToolTip": "Settings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:28:29.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RandomList.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\RandomList.cs",
+              "RelativeDocumentMoniker": "RandomList.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\RandomList.cs",
+              "RelativeToolTip": "RandomList.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:28:29.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ListScrambler.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\ListScrambler.cs",
+              "RelativeDocumentMoniker": "ListScrambler.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\ListScrambler.cs",
+              "RelativeToolTip": "ListScrambler.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAkwFQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:28:30.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RecipePatch.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\RecipePatch.cs",
+              "RelativeDocumentMoniker": "RecipePatch.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\RecipePatch.cs",
+              "RelativeToolTip": "RecipePatch.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:28:30.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ItemPlacer.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\ItemPlacer.cs",
+              "RelativeDocumentMoniker": "ItemPlacer.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Item Randomizer\\Build\\Rimworld Randomizer\\ItemPlacer.cs",
+              "RelativeToolTip": "ItemPlacer.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAYwCUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:28:30.086Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
